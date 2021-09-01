@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    
+</head>
+
+<body>
+     <div class="container">
+        <div class="row " id="first-screen">
+            <form class="d-grid gap-2 p-5 mx-auto border  mh-100 align-middle " style="width: 500px;">
+                <h1 class="mb-5">My Chat Application</h1>
+                <div class="mb-3 " >
+                  <input type="text" class="form-control" id="input-group" placeholder="Type Group Name" onclick="groupInput()">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="input-name" placeholder="Type Your Name" onclick="nameInput()">
+                </div>
+                <button type="button"  class="btn btn-primary" id="join-group" >Join Group</button>
+            </form>
+        </div>
+        <div class="row " id="second-screen" >
+            <form class="d-grid gap-2 p-5 mx-auto border h-auto " style="width: 700px;">
+                <div class="mb-3 ">
+                    <h5 id="title" >Group Name : Online Users (4)</h5>
+                    <button type="button" id="logout" class="btn btn-dark float-end" onclick="logOut()">Logout</button>
+                </div>
+                <div id="msgBlock" class=" border mx-100 mh-75  p-2 " >
+                    <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75">User1 : Message from user 1</p>
+                    <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75">User1 : Message from user 1</p>
+                    <p class="border mb-2 mt-4 pt-2 ps-2 pb-3 pe-3 w-75 float-end">User2 : Message from user 1</p>
+                    <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75 float-end">User2 : Message from user 2</p>
+                    <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75 float-end">User2 : Message from user 2</p>
+                    <p class="border mb-2 mt-4 pt-2 ps-2 pb-3 pe-3 w-75 float-start">User1 : Message from user 2</p>
+                    <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75 float-start">User1 : Message from user 1</p>
+                </div>
+                <div class="mb-3 ">
+                    <textarea id="message"class="form-control align-middle" placeholder="Message" aria-label="With textarea" onmousedown="messageBox()"></textarea>
+                    <button  type="button" id="send" class=" btn btn-primary h-100 float-end" onclick="sendMessage()">Send<br>Message</button>
+                </div>
+                <p class="text-center">You will logout after (00:21)</p>
+            </form>
+        </div>
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
