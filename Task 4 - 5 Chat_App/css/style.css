@@ -1,0 +1,57 @@
+
+body {
+    background-color: rgb(78, 137, 247);
+}
+
+h1 {
+    text-align: center;
+}
+#first-screen{
+    display: block;
+}
+#first-screen, #second-screen{
+    padding-top: 200px;
+}
+#second-screen{
+    padding-bottom: 100px;
+    display: none;
+}
+#second-screen h5 , #second-screen textarea{
+    display: inline-block;
+}
+#second-screen textarea{
+    width: 76%;
+}
+#second-screen #msgBlock{
+    overflow-y: scroll;
+    max-height: 300px;
+    max-height: 400px;
+    height: 350px
+}
+#second-screen #msgBlock p{
+    background-color: rgb(162, 195, 255);
+    color: rgb(84, 67, 192);
+    border-radius: 25px;
+
+}
+@media screen and (max-width : 495px) {
+    #second-screen form{
+        padding: 1rem!important;
+    }
+    #second-screen textarea{
+        width: 65%;
+    }
+    #second-screen #send{
+        width: 30%;
+        font-size: 12px;
+        text-align: center;
+    }
+    #second-screen #logout{
+        width: 23%;
+        font-size: 12px;
+        text-align: center;
+    }
+    #second-screen #title{
+        font-size: 19px;
+    }
+}
