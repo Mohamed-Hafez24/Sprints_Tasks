@@ -5,17 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat App</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 
     <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
-
-  <script>
-
-   
-  </script>
+    
 </head>
 
 <body>
@@ -51,18 +47,20 @@
                     <button type="button" id="logout" class="btn btn-dark float-end" onclick="logOut()">Logout</button>
                 </div>
                 <div id="msgBlock" class=" border mx-100 mh-75  p-2 " >
-                    <!-- <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75"><span id="user-name">User1 </span>: <span id="user-message">Message from user 1</span></p>
-                    <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75">User1 : Message from user 1</p>
-                    <p class="border mb-2 mt-4 pt-2 ps-2 pb-3 pe-3 w-75 float-end">User2 : Message from user 1</p>
-                    <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75 float-end">User2 : Message from user 2</p>
-                    <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75 float-end">User2 : Message from user 2</p>
-                    <p class="border mb-2 mt-4 pt-2 ps-2 pb-3 pe-3 w-75 float-start">User1 : Message from user 2</p>
-                    <p class="border mb-2 pt-2 ps-2 pb-3 pe-3 w-75 float-start">User1 : Message from user 1</p> -->
+                    <!-- <p class="border  pt-2 ps-2 pb-3 pe-3 w-75 float-start">User1 : Message from user 1</p>
+                    <p class="w-75 mb-3 float-start" id="message-time">15-5-2021 3:45</p>
+
+                    <p class="border  pt-2 ps-2 pb-3 pe-3 w-75 float-end">User1 : Message from user 1</p>
+                    <p class="w-75 mb-3 float-end" id="message-time">15-5-2021 3:45</p>
+
+                    <p class="border  pt-2 ps-2 pb-3 pe-3 w-75 float-start">User1 : Message from user 1</p>
+                    <p class="w-75 mb-3 float-start" id="message-time">15-5-2021 3:45</p> -->
+
                 </div>
                 <div class="mb-3 ">
-                    <textarea id="message"class="form-control align-middle" placeholder="Message" aria-label="With textarea" ></textarea>
-                    <button  type="button" id="send" class=" btn btn-primary h-100 float-end"  onclick="sendMessage()"   >Send<br>Message</button>
-                </div>
+                    <textarea id="message"class="form-control align-middle" placeholder="Message" aria-label="With textarea" onkeydown="handleKey(event)" ></textarea>
+                    <button  type="button" id="send" class=" btn btn-primary h-100 float-end" onclick="sendMessage()"   >Send<br>Message</button>
+                  </div>
                 <p class="text-center">You will logout after (<span id="timer">00:59</span>)</p>
             </form>
         </div>
