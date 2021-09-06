@@ -32,11 +32,21 @@ h1 {
     background-color: rgb(162, 195, 255);
     color: rgb(84, 67, 192);
     border-radius: 25px;
+    margin-bottom: 0px;
 
+}
+#second-screen #msgBlock p #user-name{
+    font-weight: bold;
+}
+#second-screen #msgBlock #message-time{
+    background-color: rgb(78, 137, 247);
+    padding-left: 20px;
+    font-size: 14px;
 }
 @media screen and (max-width : 495px) {
     #second-screen form{
         padding: 1rem!important;
+        font-size: 10px;
     }
     #second-screen textarea{
         width: 65%;
